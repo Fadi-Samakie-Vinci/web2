@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { Drink,NewDrink } from "../types";
+import { Drink, NewDrink } from "../types";
 
 const router = Router();
 const drinks: Drink[] = [
@@ -106,6 +106,7 @@ router.post("/", (req, res) => {
   drinks.push(newDrink);
   return res.json(newDrink);
 });
+
 
 
 export default router;
